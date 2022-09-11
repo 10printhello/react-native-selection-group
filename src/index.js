@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import {
-    View,
-    ViewPropTypes
+    View
 } from 'react-native';
 
 /**
@@ -122,7 +121,7 @@ SelectionGroup.propTypes = {
     onPress: PropTypes.func.isRequired,
     isSelected: PropTypes.func.isRequired,
     isDeselected: PropTypes.func,
-    containerStyle: ViewPropTypes.style,
+    containerStyle: PropTypes.any,
     renderContent: PropTypes.func.isRequired,
     onItemSelected: PropTypes.func,
     getAllSelectedItemIndexes: PropTypes.func,
